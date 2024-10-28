@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/source",
-      "destination": "/destination",
+      "source": "/about",
+      "destination": "/about-us",
       "statusCode": 307,
       "response": {
         "headers": {
