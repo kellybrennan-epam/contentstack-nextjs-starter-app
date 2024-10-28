@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/source",
+      "destination": "/destination",
+      "statusCode": 307,
+      "response": {
+        "headers": {
+          "x-powered-by": "launch"
+        }
+      }
+    }
+  ]
+}
