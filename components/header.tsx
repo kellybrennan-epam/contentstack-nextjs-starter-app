@@ -22,7 +22,7 @@ export default function Header({ header, entries }: {header: HeaderProps, entrie
             );
             if (!hFound) {
               newHeader.navigation_menu?.push({
-                label: entry.title,
+                label: entry.title,]
                 page_reference: [
                   { title: entry.title, url: entry.url, $: entry.$ },
                 ],
