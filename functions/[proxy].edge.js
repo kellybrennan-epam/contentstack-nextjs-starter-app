@@ -17,10 +17,9 @@ export default async function handler(request, context) {
     request,
   });
   const variantParam = Personalize.getVariantParam();
-    if (variantParam) {
+  if (variantParam) {
 	parsedUrl.searchParams.set(Personalize.VARIANT_QUERY_PARAM, variantParam);
   }
-  parsedUrl.searchParams.set(Personalize.VARIANT_QUERY_PARAM, variantParam);
   const modifiedRequest = new Request(parsedUrl.toString(), request);
   const response = await fetch(modifiedRequest);
   const modifiedResponse = new Response(response.body, response);
