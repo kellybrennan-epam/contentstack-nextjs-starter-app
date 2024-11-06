@@ -44,7 +44,6 @@ ContentstackLivePreview.init({
   clientUrlParams:{
     host: envConfig.CONTENTSTACK_APP_HOST,
   },
-  mode: "builder",
   ssr:false,
 })?.catch((err) => console.error(err));
 
