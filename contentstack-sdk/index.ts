@@ -45,6 +45,7 @@ ContentstackLivePreview.init({
     host: envConfig.CONTENTSTACK_APP_HOST,
   },
   ssr:false,
+  mode: "builder",
 })?.catch((err) => console.error(err));
 
 export const { onEntryChange } = ContentstackLivePreview;
