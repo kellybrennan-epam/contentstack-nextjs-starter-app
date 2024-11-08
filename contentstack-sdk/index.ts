@@ -46,6 +46,10 @@ ContentstackLivePreview.init({
   },
   ssr:false,
   mode: "builder",
+  stackDetails: {
+    apiKey: envConfig.CONTENTSTACK_PREVIEW_TOKEN
+  }
+
 })?.catch((err) => console.error(err));
 
 export const { onEntryChange } = ContentstackLivePreview;

@@ -20,6 +20,7 @@ const config = {
     CONTENTSTACK_LIVE_PREVIEW: process.env.CONTENTSTACK_LIVE_PREVIEW || "true",
     CONTENTSTACK_LIVE_EDIT_TAGS:
       process.env.CONTENTSTACK_LIVE_EDIT_TAGS || "false",
+	CONTENTSTACK_PREVIEW_TOKEN: process.env.CONTENTSTACK_PREVIEW_TOKEN,
   },
   experimental: { largePageDataBytes: 128 * 100000 },
 };
