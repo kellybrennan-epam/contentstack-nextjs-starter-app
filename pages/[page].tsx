@@ -12,7 +12,7 @@ export default function Page(props: Props) {
   async function fetchData() {
     try {
       const entryRes = await getPageRes(entryUrl);
-      if (!entryRes) throw new Error('Status code 404');
+      if (!entryRes) throw new Error('Status code 404 [page].tsx' + entryUrl);
       setEntry(entryRes);
     } catch (error) {
       console.error(error);

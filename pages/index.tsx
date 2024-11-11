@@ -14,7 +14,7 @@ export default function Home(props: Props) {
   async function fetchData() {
     try {
       const entryRes = await getPageRes(entryUrl);
-      if (!entryRes) throw new Error('Status code 404');
+      if (!entryRes) throw new Error('Status code 404 index.tsx' + entryUrl);
       setEntry(entryRes);
     } catch (error) {
       console.error(error);
